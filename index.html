@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-16">
+
+
+<canvas id="chessBoard" width="640" height="640"></canvas>
+<script src="script.js"></script>
+
+<script>
+
+    //Find Mouse Pos
+    function getMousePosition(canvas, event) {
+            let rect = canvas.getBoundingClientRect();
+            let x = event.clientX - rect.left;
+            let y = event.clientY - rect.top;
+            console.log("Rank: " + (parseInt(y / 80) + 1), 
+                        "File: " + (parseInt(x / 80) + 1));
+            return((parseInt(x / 80) + 1, parseInt(y / 80) + 1))
+        }
+      
+    let canvasElem = document.querySelector("canvas");
+          
+    canvasElem.addEventListener("mousedown", function(e)
+    {
+        getMousePosition(canvasElem, e);
+    });
+
+    
+
+</script>
+<p1>&#x2654 &#x265A</p1>
