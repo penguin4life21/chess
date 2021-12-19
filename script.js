@@ -11,9 +11,9 @@ class Piece {
 class Pawn extends Piece {
     constructor(colour) {
         if (colour == 0) {
-            super(colour, "\u2657")
+            super(colour, "\u2659")
         } else {
-            super(colour, "\u265D")
+            super(colour, "\u265F")
         }
         this.type = "Pawn"
         this.value = 100
